@@ -4,6 +4,7 @@ import {
   Box,
   styled 
 } from '@mui/material';
+import CenterContainer from 'components/CenterContainer'
 
 const StyledBox = styled(Box)(({theme}) => ({
   width: 300,
@@ -19,13 +20,13 @@ const StyledBox = styled(Box)(({theme}) => ({
 
 const Home: NextPage = () => {
   return (
-    <Grid container spacing={3}>
+    <CenterContainer container spacing={3}>
       <Grid item xs={12}>
         <StyledBox>
           
         </StyledBox>
       </Grid>
-    </Grid>
+    </CenterContainer>
   )
 }
 
